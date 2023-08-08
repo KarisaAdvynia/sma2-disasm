@@ -2,8 +2,8 @@
 080A3978          SingleCart1_Data.bin
 080A8AD0          Graphics/SingleCart_080A8AD0.bin
 080AB2D0 080B25D0 Graphics/SingleCart_080AB2D0.bin
-080CB66C          SingleCart2_Data080CB66C.bin
-080D3320 080D4020 SingleCart2_Data080D3320.bin
+080CB66C          SingleCart2_Data.bin
+080D3320 080D4020 Graphics/SingleCart_080D3320.bin
 0812EE90          Graphics/Data0812EE90.bin
 08130E90          Graphics/Data08130E90.bin
 08132E90          Graphics/Data08132E90.bin
@@ -53,7 +53,6 @@
 0816C470          Graphics/MarioBros_sprite_Huffman.bin
 081718CC          Graphics/MarioBrosTitle_layer.bin
 081740CC 08177044 Graphics/MarioBrosTitle_sprite_Huffman.bin
-081770C4 08177380 Data081770C4.bin
 08177A54          Graphics/Data08177A54.bin
 0817EA54          Graphics/Data0817EA54.bin
 08185A54          Graphics/Data08185A54.bin
@@ -122,8 +121,8 @@
 081CC8D4          Data081CC8D4.bin
 081CD0D4          Data081CD0D4.bin
 081CE0D4          Data081CE0D4.bin
-081CF0D4          Tilemap/Data081CF0D4.bin
-081D00D4          Tilemap/Data081D00D4.bin
+081CF0D4          Tilemaps/Data081CF0D4.bin
+081D00D4          Tilemaps/Data081D00D4.bin
 081D10D4          Data081D10D4.bin
 081D18D4          Data081D18D4.bin
 081D20D4          Data081D20D4.bin
@@ -143,10 +142,10 @@
 081DFDD4          Graphics/Data081DFDD4.bin
 081E0DD4 081E4DD4 Data081E0DD4.bin
 081E4F94          Data081E4F94.bin
-081E51D4          Tilemap/Data081E51D4.bin
-081E71D4 081E91D4 Tilemap/Data081E71D4.bin
-081E95D4          Tilemap/Data081E95D4.bin
-081EA5D4          Tilemap/Data081EA5D4.bin
+081E51D4          Tilemaps/Data081E51D4.bin
+081E71D4 081E91D4 Tilemaps/Data081E71D4.bin
+081E95D4          Tilemaps/Data081E95D4.bin
+081EA5D4          Tilemaps/Data081EA5D4.bin
 081EADD4          Data081EADD4.bin
 081EBDD4          Graphics/Data081EBDD4.bin
 081ECDD4          Graphics/Data081ECDD4.bin
@@ -412,4 +411,4 @@
 082FF3F4          Sound/Data082FF3F4.bin
 082FFA14          Sound/Data082FFA14.bin
 082FFD74          Sound/Data082FFD74.bin
-08300554 083F4514 Sound/Data08300554.bin
+08300554 08300670 Sound/Data08300554.bin

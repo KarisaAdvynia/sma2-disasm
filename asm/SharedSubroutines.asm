@@ -1907,7 +1907,7 @@ mov   r10,r5                        ; 0809EDCE
 pop   {r4-r7,pc}                    ; 0809EDD0
 .align 4
 @@Pool_0x0:
-.word 0x0                           ; 0809EDD4
+.d32 0x0                            ; 0809EDD4
 .pool                               ; 0809EDD8
 
 push  {r4-r7,lr}                    ; 0809EDE4
@@ -2122,7 +2122,7 @@ add   sp,0x48                       ; 0809EF5E
 pop   {r4-r7,pc}                    ; 0809EF60
 .pool                               ; 0809EF62
 @@Pool_0x10000000:
-.word 0x10000000                    ; 0809EF68
+.d32 0x10000000                     ; 0809EF68
 
 Sub0809EF6C:
 push  {r4-r6,lr}                    ; 0809EF6C
@@ -2574,7 +2574,7 @@ ldr   r0,=0xC1E00000                ; 0809F28A
 b     @@Code0809F2D4                ; 0809F28C
 .pool                               ; 0809F28E
 @@Pool_0x0:
-.word 0x0                           ; 0809F294
+.d32 0x0                            ; 0809F294
 
 @@Code0809F298:
 neg   r0,r2                         ; 0809F298
