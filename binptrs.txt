@@ -4,6 +4,7 @@
 080AB2D0 080B25D0 Graphics/SingleCart_080AB2D0.bin
 080CB66C          SingleCart2_Data.bin
 080D3320 080D4020 Graphics/SingleCart_080D3320.bin
+080F7054 080F7BE8 Tilemaps/LevelNames.bin
 0812EE90          Graphics/Data0812EE90.bin
 08130E90          Graphics/Data08130E90.bin
 08132E90          Graphics/Data08132E90.bin
@@ -141,7 +142,7 @@
 081DEDD4          Graphics/Data081DEDD4.bin
 081DFDD4          Graphics/Data081DFDD4.bin
 081E0DD4 081E4DD4 Data081E0DD4.bin
-081E4F94          Data081E4F94.bin
+081E4FB4          Data081E4FB4.bin
 081E51D4          Tilemaps/Data081E51D4.bin
 081E71D4 081E91D4 Tilemaps/Data081E71D4.bin
 081E95D4          Tilemaps/Data081E95D4.bin
