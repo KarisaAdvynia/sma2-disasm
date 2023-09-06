@@ -16630,7 +16630,7 @@ Data080FE66B:                       ; 080FE66B
 .d8 0xB8, 0x67, 0x71, 0xD8, 0x67, 0xFF, 0x00, 0x75
 .d8 0xE0, 0x7B, 0xFF, 0x00, 0x75, 0xE1, 0x7B, 0xFF
 .align 4
-.d32 0x03002340, 0x03003FA5, CodePtrs080FEA04, 0x03002340
+.d32 0x03002340, 0x03003FA5, SpriteUnknownPtrs, 0x03002340
 .d32 0x03002B68, 0x03007A48, 0x03002C04, 0x03003F98
 Data080FE744:                       ; 080FE744
 .d32 0x00000000, 0x03020100
@@ -16706,7 +16706,7 @@ Data080FE974:                       ; 080FE974
 .d32 0x03002340
 Data080FE9F8:                       ; 080FE9F8
 .d32 0x070E0702, 0x03002340, Data080FE9F8
-CodePtrs080FEA04:                   ; 080FEA04
+SpriteUnknownPtrs:                  ; 080FEA04
 .d32 Sub0802D4B0+1, Sub0802D4B0+1, Sub0802D4B0+1, Sub0802D4B0+1
 .d32 Sub0802D4B0+1, Sub0802D4B0+1, Sub0802D4B0+1, Sub0802D4B0+1
 .d32 Sub0802D4B0+1, Sub0802D4B0+1, Sub0802D4B0+1, Sub0802D4B0+1
@@ -16759,6 +16759,7 @@ CodePtrs080FEA04:                   ; 080FEA04
 .d32 Sub0802D4B0+1, Sub0802D4B0+1, Sub0802D4B0+1, Sub0802D4B0+1
 .d32 Sub0802D4B0+1, Sub0802D4B0+1, Sub0802D4B0+1, Sub0802D4B0+1
 .d32 Sub0802D4B0+1, Sub0802D4B0+1, Sub0802D4B0+1, Sub0802D4B0+1
+UnusedPtrs080FED44:                 ; 080FED44
 .d32 0x03007A48, Data0812B13C, 0x03007A48, Data0812B13C
 .d32 0x03007A48, 0x03007A48, Data0812B13C, 0x03002340
 .d32 0x03004000, 0x03003028, 0x03007A48, Data0812B13C
@@ -16772,119 +16773,434 @@ CodePtrs080FEDA8:                   ; 080FEDA8
 .d32 Sub0802C4B8+1, Sub0802C5D4+1, Sub0802C670+1, Sub0802C718+1
 .d32 Sub0802C464+1
 SpriteInitPtrs:                     ; 080FEDDC
-.d32 Sub0804389C+1, Sub0804389C+1, Sub0804389C+1, Sub0804389C+1
-.d32 Sub080441D4+1, Sub080441D4+1, Sub080441D4+1, Sub080441D4+1
-.d32 Sub0804423C+1, Sub0804426C+1, Sub0804423C+1, Sub0804423C+1
-.d32 Sub0804423C+1, Sub080448D4+1, Sub08056A40+1, Sub080462A0+1
-.d32 Sub080462D0+1, Sub0804615C+1, Return0802BD80+1, Sub08046858+1
-.d32 Sub08046858+1, Return0802BD80+1, Sub08046A28+1, Sub08046A44+1
-.d32 Sub08046A44+1, Sub0805F8B4+1, Sub080456BC+1, Return0802BD80+1
-.d32 Sub0804CD7C+1, Sub08052E80+1, Sub08052484+1, Sub0804F420+1
-.d32 Return0802BD80+1, Sub0802BD90+1, Sub0804454C+1, Sub0804454C+1
-.d32 Sub08044520+1, Sub08044520+1, Sub080497FC+1, Return0802BD80+1
-.d32 Sub0803F860+1, Sub08063D74+1, Sub0804DB28+1, Return0802BD80+1
-.d32 Sub0804DFD8+1, Sub0804E3B4+1, Sub080488E4+1, Return0802BD80+1
-.d32 Sub080541C0+1, Sub080541C0+1, Sub080541C0+1, Sub0805380C+1
-.d32 Return0802BD80+1, Sub0805B758+1, Return0802BD80+1, Sub0803FF04+1
-.d32 Sub0803FF50+1, Sub0803FFDC+1, Sub08048870+1, Sub08048870+1
-.d32 Sub080488C8+1, Sub08046EDC+1, Sub08055234+1, Return0802BD80+1
-.d32 Return0802BD80+1, Return0802BD80+1, Return0802BD80+1, Return0802BD80+1
-.d32 Return0802BD80+1, Return0802BD80+1, Sub08042D74+1, Return0802BD80+1
-.d32 Sub0804DDF8+1, Sub08050E98+1, Return0802BD80+1, Sub0804D56C+1
-.d32 Sub08050DE0+1, Sub080452F0+1, Sub080452F0+1, Sub080456BC+1
-.d32 Sub080456BC+1, Sub080413D4+1, Return0802BD80+1, Return0802BD80+1
-.d32 Sub08051F88+1, Sub08060770+1, Sub0806075C+1, Sub08060770+1
-.d32 Sub0806075C+1, Return0802BD80+1, Return0802BD80+1, Sub08060A40+1
-.d32 Sub08060A4C+1, Sub08060A40+1, Sub08060A84+1, Sub08060EE4+1
-.d32 Return0802BD80+1, Sub08056DC8+1, Sub080620C0+1, Sub080620C8+1
-.d32 Sub080620F4+1, Sub08062134+1, Sub08062134+1, Sub08062134+1
-.d32 Sub08062134+1, Return0802BD80+1, Return0802BD80+1, Return0802BD80+1
-.d32 Sub0805630C+1, Sub08049AAC+1, Sub08049AAC+1, Sub08049AAC+1
-.d32 Sub08055444+1, Sub08045C3C+1, Sub08045C3C+1, Sub08045C4C+1
-.d32 Sub08047424+1, Sub08047424+1, Sub08047424+1, Sub08047424+1
-.d32 Sub08047424+1, Return0802BD80+1, Return0802BD80+1, Sub08067254+1
-.d32 Return0802BD80+1, Return0802BD80+1, Return0802BD80+1, Return0802BD80+1
-.d32 Sub0805596C+1, Sub0804BECC+1, Sub0804A254+1, Sub080483E0+1
-.d32 Sub080483E0+1, Return0802BD80+1, Sub0805771C+1, Return0802BD80+1
-.d32 Return0802BD80+1, Return0802BD80+1, Return0802BD80+1, Return0802BD80+1
-.d32 Sub0804194C+1, Return0802BD80+1, Return0802BD80+1, Sub080632C4+1
-.d32 Sub0802BD90+1, Return0802BD80+1, Sub08042D28+1, Sub08042D28+1
-.d32 Sub08042D34+1, Sub08042D40+1, Return0802BD80+1, Sub08042D4C+1
-.d32 Sub08042D58+1, Return0802BD80+1, Sub0804D108+1, Return0802BD80+1
-.d32 Return0802BD80+1, Sub0804BFA8+1, Sub080492A4+1, Sub08041490+1
-.d32 Sub080584AC+1, Return0802BD80+1, Return0802BD80+1, Sub08063808+1
-.d32 Sub080486B8+1, Sub080488AC+1, Sub080488AC+1, Return0802BD80+1
-.d32 Return0802BD80+1, Sub080665A8+1, Sub0804B68C+1, Sub08044C6C+1
-.d32 Sub0805007C+1, Sub0805008C+1, Return0805034C+1, Sub08040098+1
-.d32 Sub080400E4+1, Sub08050868+1, Return0802BD80+1, Sub080515C0+1
-.d32 Sub0802BD90+1, Return0802BD80+1, Sub0804C660+1, Return0802BD80+1
-.d32 Return0802BD80+1, Return0802BD80+1, Sub08062DBC+1, Return0802BD80+1
-.d32 Sub08051B7C+1, Sub0804C3F4+1, Sub08041690+1, Sub0802BD90+1
-.d32 Sub0806375C+1, Sub08051860+1, Sub0802BD90+1, Sub0802BD90+1
-.d32 Return0802BD80+1, Sub080402EC+1, Sub080571A8+1, Return0802BD80+1
-.d32 Return0802BD80+1, Return0802BD80+1, Sub080686A4+1, Sub080686A4+1
-.d32 Return0802BD80+1, Return0802BD80+1, Return0802BD80+1, Return0802BD80+1
-.d32 Return0802BD80+1, Return0802BD80+1
+.d32 KoopaUnshelled_Init+1          ; 00
+.d32 KoopaUnshelled_Init+1          ; 01
+.d32 KoopaUnshelled_Init+1          ; 02
+.d32 KoopaUnshelled_Init+1          ; 03
+.d32 Koopa_Init+1                   ; 04
+.d32 Koopa_Init+1                   ; 05
+.d32 Koopa_Init+1                   ; 06
+.d32 Koopa_Init+1                   ; 07
+.d32 Paratroopa_Init+1              ; 08
+.d32 ParatroopaGreenHopping_Init+1  ; 09
+.d32 Paratroopa_Init+1              ; 0A
+.d32 Paratroopa_Init+1              ; 0B
+.d32 Paratroopa_Init+1              ; 0C
+.d32 Sub080448D4+1                  ; 0D
+.d32 Sub08056A40+1                  ; 0E
+.d32 Sub080462A0+1                  ; 0F
+.d32 Sub080462D0+1                  ; 10
+.d32 Sub0804615C+1                  ; 11
+.d32 Return0802BD80+1               ; 12
+.d32 Sub08046858+1                  ; 13
+.d32 Sub08046858+1                  ; 14
+.d32 Return0802BD80+1               ; 15
+.d32 Sub08046A28+1                  ; 16
+.d32 Sub08046A44+1                  ; 17
+.d32 Sub08046A44+1                  ; 18
+.d32 Sub0805F8B4+1                  ; 19
+.d32 Sub080456BC+1                  ; 1A
+.d32 Return0802BD80+1               ; 1B
+.d32 Sub0804CD7C+1                  ; 1C
+.d32 Sub08052E80+1                  ; 1D
+.d32 Sub08052484+1                  ; 1E
+.d32 Sub0804F420+1                  ; 1F
+.d32 Return0802BD80+1               ; 20
+.d32 Sub0802BD90+1                  ; 21
+.d32 Sub0804454C+1                  ; 22
+.d32 Sub0804454C+1                  ; 23
+.d32 Sub08044520+1                  ; 24
+.d32 Sub08044520+1                  ; 25
+.d32 Sub080497FC+1                  ; 26
+.d32 Return0802BD80+1               ; 27
+.d32 Sub0803F860+1                  ; 28
+.d32 Sub08063D74+1                  ; 29
+.d32 Sub0804DB28+1                  ; 2A
+.d32 Return0802BD80+1               ; 2B
+.d32 Sub0804DFD8+1                  ; 2C
+.d32 Sub0804E3B4+1                  ; 2D
+.d32 Sub080488E4+1                  ; 2E
+.d32 Return0802BD80+1               ; 2F
+.d32 Sub080541C0+1                  ; 30
+.d32 Sub080541C0+1                  ; 31
+.d32 Sub080541C0+1                  ; 32
+.d32 Sub0805380C+1                  ; 33
+.d32 Return0802BD80+1               ; 34
+.d32 Sub0805B758+1                  ; 35
+.d32 Return0802BD80+1               ; 36
+.d32 Sub0803FF04+1                  ; 37
+.d32 Sub0803FF50+1                  ; 38
+.d32 Sub0803FFDC+1                  ; 39
+.d32 Sub08048870+1                  ; 3A
+.d32 Sub08048870+1                  ; 3B
+.d32 Sub080488C8+1                  ; 3C
+.d32 Sub08046EDC+1                  ; 3D
+.d32 Sub08055234+1                  ; 3E
+.d32 Return0802BD80+1               ; 3F
+.d32 Return0802BD80+1               ; 40
+.d32 Return0802BD80+1               ; 41
+.d32 Return0802BD80+1               ; 42
+.d32 Return0802BD80+1               ; 43
+.d32 Return0802BD80+1               ; 44
+.d32 Return0802BD80+1               ; 45
+.d32 Sub08042D74+1                  ; 46
+.d32 Return0802BD80+1               ; 47
+.d32 Sub0804DDF8+1                  ; 48
+.d32 Sub08050E98+1                  ; 49
+.d32 Return0802BD80+1               ; 4A
+.d32 Sub0804D56C+1                  ; 4B
+.d32 Sub08050DE0+1                  ; 4C
+.d32 Sub080452F0+1                  ; 4D
+.d32 Sub080452F0+1                  ; 4E
+.d32 Sub080456BC+1                  ; 4F
+.d32 Sub080456BC+1                  ; 50
+.d32 Sub080413D4+1                  ; 51
+.d32 Return0802BD80+1               ; 52
+.d32 Return0802BD80+1               ; 53
+.d32 Sub08051F88+1                  ; 54
+.d32 Sub08060770+1                  ; 55
+.d32 Sub0806075C+1                  ; 56
+.d32 Sub08060770+1                  ; 57
+.d32 Sub0806075C+1                  ; 58
+.d32 Return0802BD80+1               ; 59
+.d32 Return0802BD80+1               ; 5A
+.d32 Sub08060A40+1                  ; 5B
+.d32 Sub08060A4C+1                  ; 5C
+.d32 Sub08060A40+1                  ; 5D
+.d32 Sub08060A84+1                  ; 5E
+.d32 Sub08060EE4+1                  ; 5F
+.d32 Return0802BD80+1               ; 60
+.d32 Sub08056DC8+1                  ; 61
+.d32 Sub080620C0+1                  ; 62
+.d32 Sub080620C8+1                  ; 63
+.d32 Sub080620F4+1                  ; 64
+.d32 Sub08062134+1                  ; 65
+.d32 Sub08062134+1                  ; 66
+.d32 Sub08062134+1                  ; 67
+.d32 Sub08062134+1                  ; 68
+.d32 Return0802BD80+1               ; 69
+.d32 Return0802BD80+1               ; 6A
+.d32 Return0802BD80+1               ; 6B
+.d32 Sub0805630C+1                  ; 6C
+.d32 Sub08049AAC+1                  ; 6D
+.d32 Sub08049AAC+1                  ; 6E
+.d32 Sub08049AAC+1                  ; 6F
+.d32 Sub08055444+1                  ; 70
+.d32 Sub08045C3C+1                  ; 71
+.d32 Sub08045C3C+1                  ; 72
+.d32 Sub08045C4C+1                  ; 73
+.d32 PowerUp_Init+1                 ; 74
+.d32 PowerUp_Init+1                 ; 75
+.d32 PowerUp_Init+1                 ; 76
+.d32 PowerUp_Init+1                 ; 77
+.d32 PowerUp_Init+1                 ; 78
+.d32 Return0802BD80+1               ; 79
+.d32 Return0802BD80+1               ; 7A
+.d32 Sub08067254+1                  ; 7B
+.d32 Return0802BD80+1               ; 7C
+.d32 Return0802BD80+1               ; 7D
+.d32 Return0802BD80+1               ; 7E
+.d32 Return0802BD80+1               ; 7F
+.d32 Sub0805596C+1                  ; 80
+.d32 Sub0804BECC+1                  ; 81
+.d32 Sub0804A254+1                  ; 82
+.d32 Sub080483E0+1                  ; 83
+.d32 Sub080483E0+1                  ; 84
+.d32 Return0802BD80+1               ; 85
+.d32 Sub0805771C+1                  ; 86
+.d32 Return0802BD80+1               ; 87
+.d32 Return0802BD80+1               ; 88
+.d32 Return0802BD80+1               ; 89
+.d32 Return0802BD80+1               ; 8A
+.d32 Return0802BD80+1               ; 8B
+.d32 Sub0804194C+1                  ; 8C
+.d32 Return0802BD80+1               ; 8D
+.d32 Return0802BD80+1               ; 8E
+.d32 Sub080632C4+1                  ; 8F
+.d32 Sub0802BD90+1                  ; 90
+.d32 Return0802BD80+1               ; 91
+.d32 Sub08042D28+1                  ; 92
+.d32 Sub08042D28+1                  ; 93
+.d32 Sub08042D34+1                  ; 94
+.d32 Sub08042D40+1                  ; 95
+.d32 Return0802BD80+1               ; 96
+.d32 Sub08042D4C+1                  ; 97
+.d32 Sub08042D58+1                  ; 98
+.d32 Return0802BD80+1               ; 99
+.d32 Sub0804D108+1                  ; 9A
+.d32 Return0802BD80+1               ; 9B
+.d32 Return0802BD80+1               ; 9C
+.d32 Sub0804BFA8+1                  ; 9D
+.d32 Sub080492A4+1                  ; 9E
+.d32 Sub08041490+1                  ; 9F
+.d32 Sub080584AC+1                  ; A0
+.d32 Return0802BD80+1               ; A1
+.d32 Return0802BD80+1               ; A2
+.d32 Sub08063808+1                  ; A3
+.d32 Sub080486B8+1                  ; A4
+.d32 Sub080488AC+1                  ; A5
+.d32 Sub080488AC+1                  ; A6
+.d32 Return0802BD80+1               ; A7
+.d32 Return0802BD80+1               ; A8
+.d32 Sub080665A8+1                  ; A9
+.d32 Sub0804B68C+1                  ; AA
+.d32 Sub08044C6C+1                  ; AB
+.d32 Sub0805007C+1                  ; AC
+.d32 Sub0805008C+1                  ; AD
+.d32 Return0805034C+1               ; AE
+.d32 Sub08040098+1                  ; AF
+.d32 Sub080400E4+1                  ; B0
+.d32 Sub08050868+1                  ; B1
+.d32 Return0802BD80+1               ; B2
+.d32 Sub080515C0+1                  ; B3
+.d32 Sub0802BD90+1                  ; B4
+.d32 Return0802BD80+1               ; B5
+.d32 Sub0804C660+1                  ; B6
+.d32 Return0802BD80+1               ; B7
+.d32 Return0802BD80+1               ; B8
+.d32 Return0802BD80+1               ; B9
+.d32 Sub08062DBC+1                  ; BA
+.d32 Return0802BD80+1               ; BB
+.d32 Sub08051B7C+1                  ; BC
+.d32 Sub0804C3F4+1                  ; BD
+.d32 Sub08041690+1                  ; BE
+.d32 Sub0802BD90+1                  ; BF
+.d32 Sub0806375C+1                  ; C0
+.d32 Sub08051860+1                  ; C1
+.d32 Sub0802BD90+1                  ; C2
+.d32 Sub0802BD90+1                  ; C3
+.d32 Return0802BD80+1               ; C4
+.d32 Sub080402EC+1                  ; C5
+.d32 Sub080571A8+1                  ; C6
+.d32 Return0802BD80+1               ; C7
+.d32 Return0802BD80+1               ; C8
+.d32 Return0802BD80+1               ; C9
+.d32 Sub080686A4+1                  ; CA
+.d32 Sub080686A4+1                  ; CB
+.d32 Return0802BD80+1               ; F9
+.d32 Return0802BD80+1               ; FA
+.d32 Return0802BD80+1               ; FB
+.d32 Return0802BD80+1               ; FC
+.d32 Return0802BD80+1               ; FD
+.d32 Return0802BD80+1               ; FE
 SpriteMainPtrs:                     ; 080FF124
-.d32 Sub080438D8+1, Sub080438D8+1, Sub080438D8+1, Sub080438D8+1
-.d32 Sub08044204+1, Sub08044204+1, Sub08044204+1, Sub08044204+1
-.d32 Sub080442A8+1, Sub080442A8+1, Sub080443DC+1, Sub080443F0+1
-.d32 Sub08044204+1, Sub080448E8+1, Sub08056A50+1, Sub08046300+1
-.d32 Sub08046414+1, Sub0804618C+1, Sub0802BD84+1, Sub08046888+1
-.d32 Sub0804699C+1, Sub08046C34+1, Sub08046C34+1, Sub08046D38+1
-.d32 Sub08046DA4+1, Sub0805F8E4+1, Sub0804DB54+1, Sub0804DCB4+1
-.d32 Sub0804CDC4+1, Sub08052F64+1, Sub080525A4+1, Sub0804F48C+1
-.d32 Sub0804FC8C+1, Sub08047D78+1, Sub080448AC+1, Sub080448AC+1
-.d32 Sub080448AC+1, Sub080448AC+1, Sub0804994C+1, Sub080499A0+1
-.d32 Sub0803F8AC+1, Sub08063E90+1, Sub0804DB54+1, Sub0804D448+1
-.d32 Sub0804E2D8+1, Sub0802BD84+1, Sub080489AC+1, Sub08055FCC+1
-.d32 Sub080541D4+1, Sub080541D4+1, Sub080541D4+1, Sub0805387C+1
-.d32 Sub080549DC+1, Sub0805C224+1, Sub0802BD84+1, Sub0803FF28+1
-.d32 Sub0803FF88+1, Sub08040014+1, Sub080489AC+1, Sub080489AC+1
-.d32 Sub080489AC+1, Sub080471D8+1, Sub08055258+1, Sub0804B81C+1
-.d32 Sub0804B81C+1, Sub08052B64+1, Sub08052B64+1, Sub08052B64+1
-.d32 Sub08053CC0+1, Sub080535C8+1, Sub08042D98+1, Sub08045BC0+1
-.d32 Sub0804DE8C+1, Sub08050EA0+1, Sub080569B0+1, Sub0804D57C+1
-.d32 Sub08050DF8+1, Sub08045680+1, Sub08045680+1, Sub08045954+1
-.d32 Sub08045954+1, Sub080413E8+1, Sub08050B1C+1, Sub0802BD84+1
-.d32 Sub08051F98+1, Sub08060790+1, Sub08060790+1, Sub08060790+1
-.d32 Sub08060790+1, Sub08061674+1, Sub0806171C+1, Sub08060AD8+1
-.d32 Sub08060AD8+1, Sub08060AD8+1, Sub08060CE4+1, Sub080612C0+1
-.d32 Sub08063BBC+1, Sub08056E6C+1, Sub08062B14+1, Sub08062B14+1
-.d32 Sub08062B20+1, Sub08062B20+1, Sub08062B20+1, Sub08062BE0+1
-.d32 Sub08062B14+1, Sub0802BD84+1, Sub08055DAC+1, Sub0805631C+1
-.d32 Sub0805631C+1, Sub08049E84+1, Sub08049E24+1, Sub08049E24+1
-.d32 Sub08055484+1, Sub08045C84+1, Sub08045C84+1, Sub08045C84+1
-.d32 Sub0804742C+1, Sub0804742C+1, Sub0804742C+1, Sub08047B18+1
-.d32 Sub0804805C+1, Sub080513C0+1, Sub0805AE78+1, Sub080677AC+1
-.d32 Sub0805A578+1, Sub080559CC+1, Sub080559CC+1, Sub080559CC+1
-.d32 Sub080559CC+1, Sub0804BED4+1, Sub0804A414+1, Sub080483F4+1
-.d32 Sub080483F4+1, Sub0802BD84+1, Sub08057780+1, Sub0804F2EC+1
-.d32 Sub0802BD84+1, Sub08054C50+1, Sub08041114+1, Sub08041C18+1
-.d32 Sub08041AE4+1, Sub08056C44+1, Sub08055200+1, Sub08063404+1
-.d32 Sub080406FC+1, Sub08042D98+1, Sub08042D98+1, Sub08042D98+1
-.d32 Sub08042D98+1, Sub08042D98+1, Sub08042D98+1, Sub08042D98+1
-.d32 Sub08042D98+1, Sub0804B15C+1, Sub0804D2E0+1, Sub08040E38+1
-.d32 Sub08040A0C+1, Sub0804BFC8+1, Sub080492B4+1, Sub08041644+1
-.d32 Sub08058574+1, Sub08058124+1, Sub080534C8+1, Sub08063820+1
-.d32 Sub08048734+1, Sub080489AC+1, Sub080489AC+1, Sub080552EC+1
-.d32 Sub0804C7F0+1, Sub08066F80+1, Sub0804B778+1, Sub08044C88+1
-.d32 Sub08050098+1, Sub08050098+1, Sub08050350+1, Sub080400BC+1
-.d32 Sub0804010C+1, Sub08050884+1, Sub0804B444+1, Sub08051654+1
-.d32 Sub0804D934+1, Sub0802BD84+1, Sub0804C68C+1, Sub080630F0+1
-.d32 Sub080630F0+1, Sub08055120+1, Sub08062DDC+1, Sub0805B5A0+1
-.d32 Sub08051BA4+1, Sub0804C410+1, Sub080418A0+1, Sub0804BDB4+1
-.d32 Sub08063770+1, Sub0805186C+1, Sub080472E0+1, Sub08052A64+1
-.d32 Sub08060974+1, Sub08040318+1, Sub080572D4+1, Sub080451A4+1
-.d32 Sub080570A4+1, Sub08060130+1, Sub08068774+1, Sub08068774+1
-.d32 Sub080677E8+1, Sub080677E8+1, Sub08067F44+1, Sub080677E8+1
-.d32 Sub08067F44+1, Sub0802BD84+1
+.d32 KoopaUnshelled_Main+1          ; 00
+.d32 KoopaUnshelled_Main+1          ; 01
+.d32 KoopaUnshelled_Main+1          ; 02
+.d32 KoopaUnshelled_Main+1          ; 03
+.d32 KoopaWalking_Main+1            ; 04
+.d32 KoopaWalking_Main+1            ; 05
+.d32 KoopaWalking_Main+1            ; 06
+.d32 KoopaWalking_Main+1            ; 07
+.d32 Sub080442A8+1                  ; 08
+.d32 Sub080442A8+1                  ; 09
+.d32 Sub080443DC+1                  ; 0A
+.d32 Sub080443F0+1                  ; 0B
+.d32 KoopaWalking_Main+1            ; 0C
+.d32 Sub080448E8+1                  ; 0D
+.d32 Sub08056A50+1                  ; 0E
+.d32 Sub08046300+1                  ; 0F
+.d32 Sub08046414+1                  ; 10
+.d32 Sub0804618C+1                  ; 11
+.d32 Sub0802BD84+1                  ; 12
+.d32 Sub08046888+1                  ; 13
+.d32 Sub0804699C+1                  ; 14
+.d32 Sub08046C34+1                  ; 15
+.d32 Sub08046C34+1                  ; 16
+.d32 Sub08046D38+1                  ; 17
+.d32 Sub08046DA4+1                  ; 18
+.d32 Sub0805F8E4+1                  ; 19
+.d32 Sub0804DB54+1                  ; 1A
+.d32 Sub0804DCB4+1                  ; 1B
+.d32 Sub0804CDC4+1                  ; 1C
+.d32 Sub08052F64+1                  ; 1D
+.d32 Sub080525A4+1                  ; 1E
+.d32 Sub0804F48C+1                  ; 1F
+.d32 Sub0804FC8C+1                  ; 20
+.d32 Sub08047D78+1                  ; 21
+.d32 Sub080448AC+1                  ; 22
+.d32 Sub080448AC+1                  ; 23
+.d32 Sub080448AC+1                  ; 24
+.d32 Sub080448AC+1                  ; 25
+.d32 Sub0804994C+1                  ; 26
+.d32 Sub080499A0+1                  ; 27
+.d32 Sub0803F8AC+1                  ; 28
+.d32 Sub08063E90+1                  ; 29
+.d32 Sub0804DB54+1                  ; 2A
+.d32 Sub0804D448+1                  ; 2B
+.d32 Sub0804E2D8+1                  ; 2C
+.d32 Sub0802BD84+1                  ; 2D
+.d32 Sub080489AC+1                  ; 2E
+.d32 Sub08055FCC+1                  ; 2F
+.d32 Sub080541D4+1                  ; 30
+.d32 Sub080541D4+1                  ; 31
+.d32 Sub080541D4+1                  ; 32
+.d32 Sub0805387C+1                  ; 33
+.d32 Sub080549DC+1                  ; 34
+.d32 Sub0805C224+1                  ; 35
+.d32 Sub0802BD84+1                  ; 36
+.d32 Sub0803FF28+1                  ; 37
+.d32 Sub0803FF88+1                  ; 38
+.d32 Sub08040014+1                  ; 39
+.d32 Sub080489AC+1                  ; 3A
+.d32 Sub080489AC+1                  ; 3B
+.d32 Sub080489AC+1                  ; 3C
+.d32 Sub080471D8+1                  ; 3D
+.d32 Sub08055258+1                  ; 3E
+.d32 Sub0804B81C+1                  ; 3F
+.d32 Sub0804B81C+1                  ; 40
+.d32 Sub08052B64+1                  ; 41
+.d32 Sub08052B64+1                  ; 42
+.d32 Sub08052B64+1                  ; 43
+.d32 Sub08053CC0+1                  ; 44
+.d32 Sub080535C8+1                  ; 45
+.d32 ChuckShared_Main+1             ; 46
+.d32 Sub08045BC0+1                  ; 47
+.d32 Sub0804DE8C+1                  ; 48
+.d32 Sub08050EA0+1                  ; 49
+.d32 Sub080569B0+1                  ; 4A
+.d32 Sub0804D57C+1                  ; 4B
+.d32 Sub08050DF8+1                  ; 4C
+.d32 Sub08045680+1                  ; 4D
+.d32 Sub08045680+1                  ; 4E
+.d32 Sub08045954+1                  ; 4F
+.d32 Sub08045954+1                  ; 50
+.d32 Sub080413E8+1                  ; 51
+.d32 Sub08050B1C+1                  ; 52
+.d32 Sub0802BD84+1                  ; 53
+.d32 Sub08051F98+1                  ; 54
+.d32 Sub08060790+1                  ; 55
+.d32 Sub08060790+1                  ; 56
+.d32 Sub08060790+1                  ; 57
+.d32 Sub08060790+1                  ; 58
+.d32 Sub08061674+1                  ; 59
+.d32 Sub0806171C+1                  ; 5A
+.d32 Sub08060AD8+1                  ; 5B
+.d32 Sub08060AD8+1                  ; 5C
+.d32 Sub08060AD8+1                  ; 5D
+.d32 Sub08060CE4+1                  ; 5E
+.d32 Sub080612C0+1                  ; 5F
+.d32 Sub08063BBC+1                  ; 60
+.d32 Sub08056E6C+1                  ; 61
+.d32 Sub08062B14+1                  ; 62
+.d32 Sub08062B14+1                  ; 63
+.d32 Sub08062B20+1                  ; 64
+.d32 Sub08062B20+1                  ; 65
+.d32 Sub08062B20+1                  ; 66
+.d32 Sub08062BE0+1                  ; 67
+.d32 Sub08062B14+1                  ; 68
+.d32 Sub0802BD84+1                  ; 69
+.d32 Sub08055DAC+1                  ; 6A
+.d32 Sub0805631C+1                  ; 6B
+.d32 Sub0805631C+1                  ; 6C
+.d32 Sub08049E84+1                  ; 6D
+.d32 Sub08049E24+1                  ; 6E
+.d32 Sub08049E24+1                  ; 6F
+.d32 Sub08055484+1                  ; 70
+.d32 Sub08045C84+1                  ; 71
+.d32 Sub08045C84+1                  ; 72
+.d32 Sub08045C84+1                  ; 73
+.d32 PowerUp747576_Main+1           ; 74
+.d32 PowerUp747576_Main+1           ; 75
+.d32 PowerUp747576_Main+1           ; 76
+.d32 Sub08047B18+1                  ; 77
+.d32 Sub0804805C+1                  ; 78
+.d32 Sub080513C0+1                  ; 79
+.d32 Sub0805AE78+1                  ; 7A
+.d32 Sub080677AC+1                  ; 7B
+.d32 Sub0805A578+1                  ; 7C
+.d32 Sub080559CC+1                  ; 7D
+.d32 Sub080559CC+1                  ; 7E
+.d32 Sub080559CC+1                  ; 7F
+.d32 Sub080559CC+1                  ; 80
+.d32 Sub0804BED4+1                  ; 81
+.d32 Sub0804A414+1                  ; 82
+.d32 Sub080483F4+1                  ; 83
+.d32 Sub080483F4+1                  ; 84
+.d32 Sub0802BD84+1                  ; 85
+.d32 Sub08057780+1                  ; 86
+.d32 Sub0804F2EC+1                  ; 87
+.d32 Sub0802BD84+1                  ; 88
+.d32 Sub08054C50+1                  ; 89
+.d32 Sub08041114+1                  ; 8A
+.d32 Sub08041C18+1                  ; 8B
+.d32 Sub08041AE4+1                  ; 8C
+.d32 Sub08056C44+1                  ; 8D
+.d32 Sub08055200+1                  ; 8E
+.d32 Sub08063404+1                  ; 8F
+.d32 Sub080406FC+1                  ; 90
+.d32 ChuckShared_Main+1             ; 91
+.d32 ChuckShared_Main+1             ; 92
+.d32 ChuckShared_Main+1             ; 93
+.d32 ChuckShared_Main+1             ; 94
+.d32 ChuckShared_Main+1             ; 95
+.d32 ChuckShared_Main+1             ; 96
+.d32 ChuckShared_Main+1             ; 97
+.d32 ChuckShared_Main+1             ; 98
+.d32 Sub0804B15C+1                  ; 99
+.d32 Sub0804D2E0+1                  ; 9A
+.d32 Sub08040E38+1                  ; 9B
+.d32 Sub08040A0C+1                  ; 9C
+.d32 Sub0804BFC8+1                  ; 9D
+.d32 Sub080492B4+1                  ; 9E
+.d32 Sub08041644+1                  ; 9F
+.d32 Sub08058574+1                  ; A0
+.d32 Sub08058124+1                  ; A1
+.d32 Sub080534C8+1                  ; A2
+.d32 Sub08063820+1                  ; A3
+.d32 Sub08048734+1                  ; A4
+.d32 Sub080489AC+1                  ; A5
+.d32 Sub080489AC+1                  ; A6
+.d32 Sub080552EC+1                  ; A7
+.d32 Sub0804C7F0+1                  ; A8
+.d32 Sub08066F80+1                  ; A9
+.d32 Sub0804B778+1                  ; AA
+.d32 Sub08044C88+1                  ; AB
+.d32 Sub08050098+1                  ; AC
+.d32 Sub08050098+1                  ; AD
+.d32 Sub08050350+1                  ; AE
+.d32 Sub080400BC+1                  ; AF
+.d32 Sub0804010C+1                  ; B0
+.d32 Sub08050884+1                  ; B1
+.d32 Sub0804B444+1                  ; B2
+.d32 Sub08051654+1                  ; B3
+.d32 Sub0804D934+1                  ; B4
+.d32 Sub0802BD84+1                  ; B5
+.d32 Sub0804C68C+1                  ; B6
+.d32 Sub080630F0+1                  ; B7
+.d32 Sub080630F0+1                  ; B8
+.d32 Sub08055120+1                  ; B9
+.d32 Sub08062DDC+1                  ; BA
+.d32 Sub0805B5A0+1                  ; BB
+.d32 Sub08051BA4+1                  ; BC
+.d32 Sub0804C410+1                  ; BD
+.d32 Sub080418A0+1                  ; BE
+.d32 Sub0804BDB4+1                  ; BF
+.d32 Sub08063770+1                  ; C0
+.d32 Sub0805186C+1                  ; C1
+.d32 Sub080472E0+1                  ; C2
+.d32 Sub08052A64+1                  ; C3
+.d32 Sub08060974+1                  ; C4
+.d32 Sub08040318+1                  ; C5
+.d32 Sub080572D4+1                  ; C6
+.d32 Sub080451A4+1                  ; C7
+.d32 Sub080570A4+1                  ; C8
+.d32 Sub08060130+1                  ; C9
+.d32 Sub08068774+1                  ; CA
+.d32 Sub08068774+1                  ; CB
+.d32 Sub080677E8+1                  ; F9
+.d32 Sub080677E8+1                  ; FA
+.d32 Sub08067F44+1                  ; FB
+.d32 Sub080677E8+1                  ; FC
+.d32 Sub08067F44+1                  ; FD
+.d32 Sub0802BD84+1                  ; FE
 ComboSoundIndexes:                  ; 080FF46C
 .d8 0x0B, 0x0A, 0x09, 0x08, 0x07, 0x06, 0x05, 0x04
 .d8 0x03, 0x00
 Data080FF476:                       ; 080FF476
 .d16 0x0000, 0x001F, 0x0028, 0x001A, 0x0019, 0x0018, 0x0017, 0x0016
 .d16 0x0015, 0x0014, 0x0013, 0x0012, 0x0026
+UnusedPtrs080FF490:                 ; 080FF490
 .d32 0x03007A50, 0x03007A40, 0x03002340, 0x03002C28
 .d32 0x03002340, Data081006D0, 0x03003F98, 0x03007A48
 .d32 DataPtrs08100580, 0x03002C28, 0x03002340, Data081006D0
@@ -16899,16 +17215,21 @@ Data080FF51C:                       ; 080FF51C
 Data080FF520:                       ; 080FF520
 .d8 0x00, 0x00, 0x08, 0x08
 Data080FF524:                       ; 080FF524
-.d32 0x00000000, 0x40004000, 0xC0804000, 0x00004040
-.d32 0x80C00040, 0x40404040, DataPtrs08100580, 0x03002340
+.d8 0x00, 0x00, 0x00, 0x00, 0x00, 0x40, 0x00, 0x40
+.d8 0x00, 0x40, 0x80, 0xC0, 0x40, 0x40, 0x00, 0x00
+.d8 0x40, 0x00, 0xC0, 0x80, 0x40, 0x40, 0x40, 0x40
+UnusedPtrs080FF53C:                 ; 080FF53C
+.d32 DataPtrs08100580, 0x03002340
 .d32 0x03002C28, Data080FF51C, Data080FF520, Data080FF524
 .d32 Data081006D0, 0x03002C04, 0x03002C08, 0x03003F98
 Data080FF564:                       ; 080FF564
-.d32 0x00000200, Data080FF564
+.d32 0x00000200
+.d32 Data080FF564
 Data080FF56C:                       ; 080FF56C
 .d32 0x07080706
 Data080FF570:                       ; 080FF570
-.d32 0x40000000, 0x03002340, Data080FF56C, 0x03002C28
+.d32 0x40000000
+.d32 0x03002340, Data080FF56C, 0x03002C28
 .d32 Data080FF570, 0x03002BD4, 0x03002340, 0x03002C28
 .d32 0x03007A48, Data081006D0, 0x03002BD4, 0x03003F98
 Data080FF5A0:                       ; 080FF5A0
