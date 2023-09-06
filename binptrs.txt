@@ -151,6 +151,7 @@
 081EBDD4          Graphics/Data081EBDD4.bin
 081ECDD4          Graphics/Data081ECDD4.bin
 081F0DD4          Data081F0DD4.bin
+081F0ED4          Data081F0ED4.bin
 081F0FD4 081F17D4 Data081F0FD4.bin
 081F19D4          Data081F19D4.bin
 081F29D4          Data081F29D4.bin
