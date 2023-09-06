@@ -3,10 +3,10 @@
 SingleCart_080B25D0:
 mov    r0,0x12                      ; 080B25D0
 msr    cpsr_fc,r0                   ; 080B25D4
-ldr    r13,[@@Pool+4]               ; 080B25D8
+ldr    r13,[@@_03007F80]            ; 080B25D8
 mov    r0,0x1F                      ; 080B25DC
 msr    cpsr_fc,r0                   ; 080B25E0
-ldr    r13,[@@Pool]                 ; 080B25E4
+ldr    r13,[@@_03007E00]            ; 080B25E4
 ldr    r1,=0x03007FFC               ; 080B25E8
 add    r0,=Code080B260C             ; 080B25EC
 str    r0,[r1]                      ; 080B25F0
@@ -14,9 +14,8 @@ ldr    r1,=0x020058F1               ; 080B25F4
 mov    lr,pc                        ; 080B25F8
 bx     r1                           ; 080B25FC
 b      SingleCart_080B25D0          ; 080B2600
-@@Pool:
-.d32 0x03007E00                     ; 080B2604
-.d32 0x03007F80                     ; 080B2608
+@@_03007E00: .d32 0x03007E00        ; 080B2604
+@@_03007F80: .d32 0x03007F80        ; 080B2608
 
 Code080B260C:
 mov    r12,0x04000000               ; 080B260C
@@ -48143,49 +48142,49 @@ mov    r4,0x7F                      ; 080CB0E0
 mov    r5,0xFF00                    ; 080CB0E4
 orr    r5,r5,0x80                   ; 080CB0E8
 @@Code080CB0EC:
-.d32  0xE0D030F2
+.d32 0xE0D030F2
 ;ldrsh  r3,[r0],0x2                  ; 080CB0EC
 ands   r12,r3,r5                    ; 080CB0F0
 cmpne  r12,r5                       ; 080CB0F4
 addne  r3,r4,r3,lsr 0x1F            ; 080CB0F8
 strb   r3,[r1],0x1                  ; 080CB0FC
-.d32  0xE0D030F2
+.d32 0xE0D030F2
 ;ldrsh  r3,[r0],0x2                  ; 080CB100
 ands   r12,r3,r5                    ; 080CB104
 cmpne  r12,r5                       ; 080CB108
 addne  r3,r4,r3,lsr 0x1F            ; 080CB10C
 strb   r3,[r1],0x1                  ; 080CB110
-.d32  0xE0D030F2
+.d32 0xE0D030F2
 ;ldrsh  r3,[r0],0x2                  ; 080CB114
 ands   r12,r3,r5                    ; 080CB118
 cmpne  r12,r5                       ; 080CB11C
 addne  r3,r4,r3,lsr 0x1F            ; 080CB120
 strb   r3,[r1],0x1                  ; 080CB124
-.d32  0xE0D030F2
+.d32 0xE0D030F2
 ;ldrsh  r3,[r0],0x2                  ; 080CB128
 ands   r12,r3,r5                    ; 080CB12C
 cmpne  r12,r5                       ; 080CB130
 addne  r3,r4,r3,lsr 0x1F            ; 080CB134
 strb   r3,[r1],0x1                  ; 080CB138
-.d32  0xE0D030F2
+.d32 0xE0D030F2
 ;ldrsh  r3,[r0],0x2                  ; 080CB13C
 ands   r12,r3,r5                    ; 080CB140
 cmpne  r12,r5                       ; 080CB144
 addne  r3,r4,r3,lsr 0x1F            ; 080CB148
 strb   r3,[r1],0x1                  ; 080CB14C
-.d32  0xE0D030F2
+.d32 0xE0D030F2
 ;ldrsh  r3,[r0],0x2                  ; 080CB150
 ands   r12,r3,r5                    ; 080CB154
 cmpne  r12,r5                       ; 080CB158
 addne  r3,r4,r3,lsr 0x1F            ; 080CB15C
 strb   r3,[r1],0x1                  ; 080CB160
-.d32  0xE0D030F2
+.d32 0xE0D030F2
 ;ldrsh  r3,[r0],0x2                  ; 080CB164
 ands   r12,r3,r5                    ; 080CB168
 cmpne  r12,r5                       ; 080CB16C
 addne  r3,r4,r3,lsr 0x1F            ; 080CB170
 strb   r3,[r1],0x1                  ; 080CB174
-.d32  0xE0D030F2
+.d32 0xE0D030F2
 ;ldrsh  r3,[r0],0x2                  ; 080CB178
 ands   r12,r3,r5                    ; 080CB17C
 cmpne  r12,r5                       ; 080CB180

@@ -75,10 +75,10 @@ bx     lr                           ; 0809FFDC
 Code080A00EC:
 mov    r0,0x12                      ; 080A00EC
 msr    cpsr_fc,r0                   ; 080A00F0
-ldr    r13,[@@Pool+4]               ; 080A00F4
+ldr    r13,[@@_03007F80]            ; 080A00F4
 mov    r0,0x1F                      ; 080A00F8
 msr    cpsr_fc,r0                   ; 080A00FC
-ldr    r13,[@@Pool]                 ; 080A0100
+ldr    r13,[@@_03007E00]            ; 080A0100
 ldr    r1,=0x03007FFC               ; 080A0104
 add    r0,=Code080A0128             ; 080A0108
 str    r0,[r1]                      ; 080A010C
@@ -86,9 +86,8 @@ ldr    r1,=0x02000561               ; 080A0110
 mov    lr,pc                        ; 080A0114
 bx     r1                           ; 080A0118
 b      Code080A00EC                 ; 080A011C
-@@Pool:
-.d32 0x03007E00                     ; 080A0120
-.d32 0x03007F80                     ; 080A0124
+@@_03007E00: .d32 0x03007E00        ; 080A0120
+@@_03007F80: .d32 0x03007F80        ; 080A0124
 
 Code080A0128:
 mov    r3,0x04000000                ; 080A0128

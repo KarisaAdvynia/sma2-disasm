@@ -306,7 +306,7 @@ Message22alt:                       ; 080D7369
 .strn "Try these areas again\n"
 .strn "to find all the secrets!\n"
 .strn " \n"
-Message0C_0D_10_17alt:     ; 080D73D7
+Message0C_0D_10_17alt:              ; 080D73D7
 .strn "You found all of the\n"
 .strn "exit goals!\n"
 .strn " \n"
@@ -343,7 +343,7 @@ Message16alt:                       ; 080D74D2
 .strn " \n"
 .strn " \n"
 
-DefaultMessagePtrs:                   ; 080D7540
+DefaultMessagePtrs:                 ; 080D7540
 .d32 Message00_01_02_03, Message00_01_02_03, Message00_01_02_03, Message00_01_02_03
 .d32 Message04, Message05, Message06, Message07
 .d32 Message08, Message09, Message0A, Message0B
@@ -353,7 +353,7 @@ DefaultMessagePtrs:                   ; 080D7540
 .d32 Message18, Message19, Message1A, Message1B
 .d32 Message1C, Message1D, Message1E, Message1F_20_21
 .d32 Message1F_20_21, Message1F_20_21, Message22, Message23
-AltMessagePtrs:                       ; 080D75D0
+AltMessagePtrs:                     ; 080D75D0
 .d32 0x00000000, 0x00000000, 0x00000000, 0x00000000
 .d32 0x00000000, 0x00000000, 0x00000000, 0x00000000
 .d32 0x00000000, Message09alt, 0x00000000, 0x00000000

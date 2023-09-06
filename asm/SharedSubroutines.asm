@@ -1726,7 +1726,7 @@ cmp   r6,r2                         ; 0809EC7C
 bls   @@Code0809EC88                ; 0809EC7E
 @@Code0809EC80:
 ldr   r5,=0x1                       ; 0809EC80
-ldr   r4,[@@Pool_0x0]               ; 0809EC82
+ldr   r4,[@@_0x0]                   ; 0809EC82
 str   r4,[sp,0x6C]                  ; 0809EC84
 str   r5,[sp,0x70]                  ; 0809EC86
 @@Code0809EC88:
@@ -1906,7 +1906,7 @@ mov   r9,r4                         ; 0809EDCC
 mov   r10,r5                        ; 0809EDCE
 pop   {r4-r7,pc}                    ; 0809EDD0
 .align 4
-@@Pool_0x0:
+@@_0x0:
 .d32 0x0                            ; 0809EDD4
 .pool                               ; 0809EDD8
 
@@ -2034,7 +2034,7 @@ sub   r0,r6,0x1                     ; 0809EEBC
 mov   r2,r12                        ; 0809EEBE
 str   r0,[r2,0x8]                   ; 0809EEC0
 @@Code0809EEC2:
-ldr   r7,[@@Pool_0x10000000]        ; 0809EEC2
+ldr   r7,[@@_0x10000000]            ; 0809EEC2
 ldr   r6,=0x0                       ; 0809EEC4
 mov   r0,0x0                        ; 0809EEC6
 mov   r1,0x0                        ; 0809EEC8
@@ -2121,7 +2121,7 @@ bl    Sub0809E648                   ; 0809EF5A
 add   sp,0x48                       ; 0809EF5E
 pop   {r4-r7,pc}                    ; 0809EF60
 .pool                               ; 0809EF62
-@@Pool_0x10000000:
+@@_0x10000000:
 .d32 0x10000000                     ; 0809EF68
 
 Sub0809EF6C:
@@ -2569,11 +2569,11 @@ mov   r0,0x80                       ; 0809F280
 lsl   r0,r0,0x18                    ; 0809F282
 cmp   r2,r0                         ; 0809F284
 bne   @@Code0809F298                ; 0809F286
-ldr   r1,[@@Pool_0x0]               ; 0809F288
+ldr   r1,[@@_0x0]                   ; 0809F288
 ldr   r0,=0xC1E00000                ; 0809F28A
 b     @@Code0809F2D4                ; 0809F28C
 .pool                               ; 0809F28E
-@@Pool_0x0:
+@@_0x0:
 .d32 0x0                            ; 0809F294
 
 @@Code0809F298:
