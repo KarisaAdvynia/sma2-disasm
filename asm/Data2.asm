@@ -2495,7 +2495,7 @@ Data081778D0:                       ; 081778D0
 .d32 0x8E8D8B8A, 0x94939190, 0x9C9A9896, 0xA4A2A09E
 .d32 0xADABA8A6, 0xB7B4B2AF, 0xC1BFBCB9, 0xCDCAC7C4
 .d32 0xD8D5D2CF, 0xE4E1DEDB, 0xF1EEEBE8, 0xFDFAF7F4
-Unused081779D0:                     ; 081779D0
+SaveTypeStringUnused:               ; 081779D0
 .d8 "EEPROM_V122"
 .align 4
 Data081779DC:                       ; 081779DC
