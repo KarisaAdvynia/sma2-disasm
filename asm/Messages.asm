@@ -1,4 +1,4 @@
-.table "../sma2messagechar.tbl"
+.table "sma2messagechar.tbl"
 
 Message04:                          ; 080D63E4
 .strn "Welcome to Dinosaur\n"

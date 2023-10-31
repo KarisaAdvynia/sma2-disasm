@@ -73,7 +73,7 @@ if __name__ == "__main__":
             errstr = type(err).__name__ + ": " + errstr
         print(errstr)
         print("This script needs a source ROM to extract data. "
-              "Either include a file named 'sma3.gba' in the directory, or include exactly one .gba file.")
+              "Either include a file named 'sma2.gba' in the directory, or include exactly one .gba file.")
         input()
         import sys
         sys.exit()

@@ -5,7 +5,7 @@
 SingleCart_0809FE4C:
 ; Copy of internal header
 b      Code0809FF0C                 ; 0809FE4C
-.incbin "../data/InternalHeader_NintendoLogo.bin"
+.incbin "data/InternalHeader_NintendoLogo.bin"
 .d8 "SUPER MARIOBAA2E"              ; 0809FEEC
 .d8 "01"                            ; 0809FEFC
 .d8 0x96,0x00,0x00,0x00,0x00,0x00
@@ -6736,8 +6736,8 @@ mov   pc,lr                         ; 080A3974
 
 ; 080A3978-080B25D0: first pseudo-ROM data sector
 
-.incbin "../data/SingleCart1_Data.bin"
+.incbin "data/SingleCart1_Data.bin"
 SingleCart_080A8AD0:                ; 080A8AD0
-.incbin "../data/Graphics/SingleCart_080A8AD0.bin"
+.incbin "data/Graphics/SingleCart_080A8AD0.bin"
 SingleCart_080AB2D0:                ; 080AB2D0
-.incbin "../data/Graphics/SingleCart_080AB2D0.bin"
+.incbin "data/Graphics/SingleCart_080AB2D0.bin"
