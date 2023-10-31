@@ -6,13 +6,13 @@ CodePtrs080D4020:                   ; 080D4020
 MBGameStatePtrs:                    ; 080D4058
 .d32 Sub080802D8+1                  ; 00
 .d32 Sub08082494+1                  ; 01
-UnusedPtrs080D4060:                 ; 080D4060
+@@UnusedPtrs080D4060:               ; 080D4060
 .d32 0x03002340, MBGameStatePtrs, 0x03002B96, 0x030079F2
 .d32 0x030079F3, 0x03002BC3, 0x030078DC, 0x030079F8
 .d32 0x030079F9
 CodePtrs080D4084:                   ; 080D4084
 .d32 Sub080082E8+1, Sub08008434+1, Sub08008A94+1
-UnusedPtrs080D4090:                 ; 080D4090
+@@UnusedPtrs080D4090:               ; 080D4090
 .d32 CodePtrs080D4084, 0x03002340, 0x030079F9, SMWGameStatePtrs
 .d32 0x03002340, 0x03002BC6
 GameModePtrs:                       ; 080D40A8
@@ -20,7 +20,7 @@ GameModePtrs:                       ; 080D40A8
 .d32 SMWGameMode+1                  ; 01
 .d32 GBALink_Main+1                 ; 02
 .d32 MarioBros_Main+1               ; 03
-UnusedPtrs080D40B8:                 ; 080D40B8
+@@UnusedPtrs080D40B8:               ; 080D40B8
 .d32 0x03002340, GameModePtrs, 0x03002B64, 0x03002B94
 .d32 0x03002BC5, 0x03002BC1, 0x03002BC2, 0x03002B96
 .d32 0x030079F8, 0x03002BD1, 0x03002340, 0x03002C28
@@ -42,7 +42,7 @@ UnusedPtrs080D40B8:                 ; 080D40B8
 .d32 0x03002340, 0x03002B94, 0x03002B96
 OAMBuffer03002C28InitData:          ; 080D41E4
 .d32 0x000000A0, 0x00000000
-UnusedPtrs080D41EC:                 ; 080D41EC
+@@UnusedPtrs080D41EC:               ; 080D41EC
 .d32 OAMBuffer03002C28InitData, 0x03002C28
 .d32 0x03003028, 0x03002340, 0x03002B74, 0x03002B72
 .d32 0x03002B80, 0x03002B7C, 0x03002B7E, 0x03002BD7
@@ -78,7 +78,7 @@ StripeTilemapPtrs:                  ; 080D4290
 .d32 CastleScene7_Line2, CastleScene7_Line1, CastleScene7_Line0, Data080DBEE4
 .d32 Data080DC096, Data080DBE52, 0x00000000, Data080D4254
 .d32 0x00000000, Data080DC22E
-UnusedPtrs080D43C8:                 ; 080D43C8
+@@UnusedPtrs080D43C8:               ; 080D43C8
 .d32 StripeTilemapPtrs, 0x03002340, 0x03002BD2, 0x03002340
 .d32 0x03003F98, 0x03002340, Data080D5944, 0x03002BD4
 .d32 0x03002340, Data080D5944, 0x03002BD4, Data080D5EC0
@@ -87,7 +87,7 @@ UnusedPtrs080D43C8:                 ; 080D43C8
 .d32 0x03002340, 0x03003028, 0x03002BDD, 0x03002BC7
 DataPtrs080D4428:                   ; 080D4428
 .d32 Data08177A54, Data0817EA54
-UnusedPtrs080D4430:                 ; 080D4430
+@@UnusedPtrs080D4430:               ; 080D4430
 .d32 0x03002340, DataPtrs080D4428
 .d32 Data08177A54, Data0817EA54, 0x0300405A, 0x03004058
 .d32 0x03003028, 0x03002BDD, 0x03004054, 0x0300406E
@@ -102,7 +102,7 @@ Data080D4474:                       ; 080D4474
 .d32 0x0A0A1A1A
 Data080D4478:                       ; 080D4478
 .d32 0x00408000, 0x00400201, 0x00000040, 0x00000200
-UnusedPtrs080D4488:                 ; 080D4488
+@@UnusedPtrs080D4488:               ; 080D4488
 .d32 0x03002340, 0x03007A48, 0x03003FA0, 0x03003FDC
 .d32 Data080D4478, Data080D4464, Data080D4474, Data080D4468
 .d32 Data080D4470, 0x03004043, 0x03004044, 0x03003F98
@@ -126,7 +126,7 @@ UnusedPtrs080D4488:                 ; 080D4488
 .d32 0x03003028, 0x03002BC6
 Data080D45D0:                       ; 080D45D0
 .d32 0x00040010, 0x02000020, 0x00040100
-UnusedPtrs080D45DC:                 ; 080D45DC
+@@UnusedPtrs080D45DC:               ; 080D45DC
 .d32 0x03002340
 .d32 0x03007A38, Data080D45D0, 0x03002F88, BuildDate
 .d32 0x03002F90, 0x03002BC2, 0x03002B96, 0x02880148
@@ -150,7 +150,7 @@ Data080D46A2:                       ; 080D46A2
 .d16 0x001F
 Data080D46A4:                       ; 080D46A4
 .d32 0x0000000F
-UnusedPtrs080D46A8:                 ; 080D46A8
+@@UnusedPtrs080D46A8:               ; 080D46A8
 .d32 0x03002340, Data080D469C, Data080D46A0
 .d32 Data080D46A2, 0x03002BD7, 0x03002BD8, 0x03002BC6
 .d32 0x03002340, Data080D469E, Data080D46A4, 0x03002BD9
@@ -164,7 +164,7 @@ Data080D472C:                       ; 080D472C
 .d16 0x0000, 0xFFF8, 0xFFF8, 0xFFF8, 0x00F0, 0x00F8, 0x0100
 Data080D473A:                       ; 080D473A
 .d16 0x0000, 0x00F5, 0x0090, 0x0138, 0xFFF5, 0x0090, 0x0138
-UnusedPtrs080D474A:                 ; 080D474A
+@@UnusedPtrs080D474A:               ; 080D474A
 .d32 0x03002340, Data080D472C, Data080D473A, Data081CC8D4
 .d32 0x03003F9C, 0x03002B70, 0x03002BD9, 0x03003F98
 .d32 0x03002BC6, 0x03002C04, 0x03002C0C, 0x03002C08
@@ -187,7 +187,7 @@ Data080D47EC:                       ; 080D47EC
 .d8 0x08, 0x08, 0x08, 0x0E, 0x08, 0x01, 0x08, 0x08
 .d8 0x08, 0x08, 0x08, 0x08, 0x08, 0x08, 0x08, 0x08
 .d8 0x08, 0x12, 0x08, 0x08, 0x08, 0x08, 0x08, 0x08
-UnusedPtrs080D481C:                 ; 080D481C
+@@UnusedPtrs080D481C:               ; 080D481C
 .d32 0x03002C68, 0x03002340, Data080D47BC, Data080D47EC
 .d32 0x03002340, 0x03003F98, 0x03002BA0, 0x03002BA1
 .d32 0x03002340, 0x03002B72, 0x03002B74, 0x03002B80
@@ -198,7 +198,7 @@ Data080D4870:                       ; 080D4870
 .d16 0x0006, 0x0006, 0x0005, 0x0017, 0x0005, 0x0016, 0x0007, 0x0009
 .d16 0x0015, 0x0021, 0x0005, 0x0005, 0x0005, 0x0005, 0x001A, 0x0005
 .d16 0x0005, 0x0005, 0x000A, 0x0000
-UnusedPtrs080D4898:                 ; 080D4898
+@@UnusedPtrs080D4898:               ; 080D4898
 .d32 0x03002340, Data080D4870
 .d32 0x03007A48, 0x03003F98, 0x03002340, 0x03003F98
 .d32 0x03002BDB, 0x03002B80, 0x03002B82, 0x03002C14
@@ -212,7 +212,7 @@ UnusedPtrs080D4898:                 ; 080D4898
 .d32 0x03002BDC, 0x03003F98, 0x03002B78, 0x03002B70
 Data080D4940:                       ; 080D4940
 .d32 0x0000FFFE, 0x00000002
-UnusedPtrs080D4948:                 ; 080D4948
+@@UnusedPtrs080D4948:               ; 080D4948
 .d32 0x03002340, 0x03007A38
 .d32 0x03007A48, Data080D4940, 0x03003F98, 0x03002BC6
 .d32 0x03002BC3, 0x03004042, 0x03003FA0, 0x03003F9C
@@ -227,7 +227,7 @@ Data080D49BC:                       ; 080D49BC
 .d32 0x03060506, 0x03060603
 Data080D49C4:                       ; 080D49C4
 .d32 0x05474D4D, 0x0047484D
-UnusedPtrs080D49CC:                 ; 080D49CC
+@@UnusedPtrs080D49CC:               ; 080D49CC
 .d32 0x03002340, Data080D49B4
 .d32 Data080D49BC, 0x030040DC, Data080D49C4, 0x03007A48
 .d32 Data081EADD4, Data08109DE8, Data080D5944, 0x03003028
@@ -331,7 +331,7 @@ SMWGameStatePtrs:                   ; 080D4B8C
 .d32 FadeInToNextState+1            ; 46
 .d32 PerfectCutsceneMain+1          ; 47
 .d32 Return0800DE64+1               ; 48
-UnusedPtrs080D4CB0:                 ; 080D4CB0
+@@UnusedPtrs080D4CB0:               ; 080D4CB0
 .d32 0x03002C04, 0x03002340, 0x03003FA0
 .d32 0x03003FDC, 0x03002340, 0x03003FA0, 0x03002340
 .d32 0x03002B7A, 0x03002340, 0x03002B78, 0x03002B7A
@@ -341,7 +341,7 @@ Data080D4CF0:                       ; 080D4CF0
 .d32 0x01C00201, 0x02018180, 0x810201C0, 0x01800201
 .d32 0x02018102, 0xC0020181, 0x01C00201, 0x02018102
 .d32 0x80020180, 0x01800201, 0x02018102, 0x80020181
-UnusedPtrs080D4D20:                 ; 080D4D20
+@@UnusedPtrs080D4D20:               ; 080D4D20
 .d32 0x03002340, 0x03007A48, Data080D4CF0, Data08157E90
 .d32 Data081CD0D4, Data081CE0D4, DataPtrs080DAB44, DataPtrs080DABF8
 .d32 0x03003F98, 0x03002B72, 0x03002B74, 0x03002B7E
@@ -364,7 +364,7 @@ Data080D4DBC:                       ; 080D4DBC
 .d32 0xFFFF0001, 0xFFFE0002, 0x004E0098
 Data080D4DC8:                       ; 080D4DC8
 .d32 0xFFFC0000, 0x00000004, 0x0004FFFC
-UnusedPtrs080D4DD4:                 ; 080D4DD4
+@@UnusedPtrs080D4DD4:               ; 080D4DD4
 .d32 0x03002340
 .d32 Data080D4DC8, 0x03007A48, Data080D4D80, Data080D4D84
 .d32 Data080D4D8E, 0x03003F98, 0x03004004, 0x03002C08
@@ -401,7 +401,7 @@ Data080D4FA4:                       ; 080D4FA4
 .d16 0x0010, 0x0010, 0x0150, 0x0290
 Data080D4FAC:                       ; 080D4FAC
 .d16 0x0018, 0x0018, 0x0158, 0x0298
-UnusedPtrs080D4FB4:                 ; 080D4FB4
+@@UnusedPtrs080D4FB4:               ; 080D4FB4
 .d32 0x03002340, SaveGlobal_ASCII
 .d32 0x03002340, Data080D4FA4, 0x03002BE1, 0x03002BCF
 .d32 0x03002340, Data080D4FAC, 0x03002BE1, 0x03002BCF
@@ -418,7 +418,7 @@ Data080D5020:                       ; 080D5020
 .d16 0x0250, 0x02D0, 0x0330, 0x0390
 Data080D5038:                       ; 080D5038
 .d16 0x0328, 0x014D, 0x0152, 0x0153, 0x045B, 0x025C, 0x0857, 0x0130
-UnusedPtrs080D5048:                 ; 080D5048
+@@UnusedPtrs080D5048:               ; 080D5048
 .d32 0x03002340, Data080D5008, 0x03002BC8, 0x03002BE1
 .d32 0x03002BCF, 0x03002340, Data080D5020, 0x03002BC8
 .d32 0x03002BE1, 0x03002BCF, 0x03002340, Data080D5008
@@ -535,7 +535,7 @@ DataPtrs080D556C:                   ; 080D556C
 .d32 Data080D5366, Data080D5240, Data080D52A2, Data080D5304
 DataPtrs080D557C:                   ; 080D557C
 .d32 Data080D54F6, Data080D53D0, Data080D5432, Data080D5494
-UnusedPtrs080D558C:                 ; 080D558C
+@@UnusedPtrs080D558C:               ; 080D558C
 .d32 Data08154E90, Data0815AE90, Data0815D090, 0x03002340
 .d32 Data080D512C, Data080D513A, DataPtrs080D5560, Data080D51F0
 .d32 DataPtrs080D557C, DataPtrs080D556C, 0x03002BCB, 0x03002BDB
@@ -543,7 +543,7 @@ UnusedPtrs080D558C:                 ; 080D558C
 .d32 0x03002BC8, 0x03002BD0, 0x030079F9
 Data080D55D8:                       ; 080D55D8
 .d32 0x039C038C
-UnusedPtrs080D55DC:                 ; 080D55DC
+@@UnusedPtrs080D55DC:               ; 080D55DC
 .d32 0x03002340, 0x03002B68, Data080D55D8
 .d32 0x03002BD0, 0x03002BC1, 0x03002B96, 0x03002BC8
 .d32 0x03002BCF, 0x03002C04, 0x03002C08, 0x030079F8
@@ -557,7 +557,7 @@ UnusedPtrs080D55DC:                 ; 080D55DC
 CodePtrs080D5678:                   ; 080D5678
 .d32 Return08008A90+1, Sub0800860C+1, Return08008A90+1, Sub08008A20+1
 .d32 Sub080089BC+1, Sub08008A20+1, Sub08008958+1
-UnusedPtrs080D5694:                 ; 080D5694
+@@UnusedPtrs080D5694:               ; 080D5694
 .d32 CodePtrs080D5678, 0x03002340, 0x03002BCF
 Data080D56A0:                       ; 080D56A0
 .d8 0x00, 0x01, 0x13, 0x02, 0x00, 0x01, 0x12, 0x03
@@ -847,7 +847,7 @@ Data080D639A:                       ; 080D639A
 .d32 0x03002BA4, 0x03003F98, 0x03002B7C, 0x03002BD3
 .d32 0x03002BC6, 0x03002B96
 
-.include "Messages.asm"
+.include "asm/Messages.asm"
 
 Data080D7660:                       ; 080D7660
 .d16 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
@@ -1181,7 +1181,7 @@ Data080D84EE:                       ; 080D84EE
 .d16 0xE3D6, 0x0008, 0xA146, 0xA147, 0xA148, 0xA149, 0xA14A, 0xA14B, 0xA14C, 0xA14D
 .d16 0xE416, 0x0008, 0xA156, 0xA157, 0xA158, 0xA159, 0xA15A, 0xA15B, 0xA15C, 0xA15D
 .d16 0xFFFF
-UnusedPtrs080D85D0:                 ; 080D85D0
+@@UnusedPtrs080D85D0:               ; 080D85D0
 .d32 Data081F19D4, Data080D83DE, Data080D843A, Data080D84B6
 .d32 0x03002340, 0x03002BDC, 0x03002B7C, 0x03002B7E
 .d32 0x03002BD7, 0x03002B72, 0x03002BC6, Data081F19D4
@@ -1251,7 +1251,7 @@ Data080D87EC:                       ; 080D87EC
 .d16 0xE41A, 0x0001, 0x39D1
 .d16 0xE41C, 0x400C, 0x39D4
 .d16 0xFFFF
-UnusedPtrs080D8848:                 ; 080D8848
+@@UnusedPtrs080D8848:               ; 080D8848
 .d32 0x03002340, Data080D84B6, 0x03002B68, 0x03003F98
 .d32 0x03002B82, 0x03002B80, 0x03002BC6, 0x03002340
 .d32 0x03002B68, Data080D87EC, 0x03002B96, 0x03003F98
@@ -1263,7 +1263,7 @@ Data080D8888:                       ; 080D8888
 .d16 0xE41A, 0x400E, 0x00FC
 .d16 0xFFFF
 .align 4
-UnusedPtrs080D88A4:                 ; 080D88A4
+@@UnusedPtrs080D88A4:               ; 080D88A4
 .d32 Data080D8888, 0x03002B68, 0x03002340, 0x03002340
 .d32 0x03002B68, Data080D8888, 0x03002BC4, 0x03002BC8
 .d32 0x03002B96, 0x03003F98, 0x03002BC6, 0x03002340
@@ -13950,7 +13950,7 @@ Data080F7024:                       ; 080F7024
 .d32 0x03002340, Data080F7024
 .d32 0x03003F9C, 0x03003F98, 0x03002BDE, 0x03002BC7
 Data080F7054:                       ; 080F7054
-.incbin "../data/Tilemaps/LevelNames.bin"
+.incbin "data/Tilemaps/LevelNames.bin"
 .d32 Data080F7054
 BitTable8Desc_080F7BEC:             ; 080F7BEC
 .d8 0x80, 0x40, 0x20, 0x10, 0x08, 0x04, 0x02, 0x01
@@ -15125,7 +15125,7 @@ Data080FB4E8:                       ; 080FB4E8
 .d16 0xE2DA, 0x0004, 0x1060, 0x1061, 0x1062, 0x1063
 .d16 0xFFFF
 .align 4
-UnusedPtrs080FB50C:                 ; 080FB50C
+@@UnusedPtrs080FB50C:               ; 080FB50C
 .d32 Data080FB4E8, 0x03002340, 0x03003F98, 0x03002340
 .d32 0x03002B68, 0x03002B96, 0x03003F98, 0x03002BC6
 CodePtrs080FB52C:                   ; 080FB52C
@@ -16754,23 +16754,30 @@ Data080FE66B:                       ; 080FE66B
 .d8 0xB8, 0x67, 0x71, 0xD8, 0x67, 0xFF, 0x00, 0x75
 .d8 0xE0, 0x7B, 0xFF, 0x00, 0x75, 0xE1, 0x7B, 0xFF
 .align 4
+@@UnusedPtrs080FE724:               ; 080FE724
 .d32 0x03002340, 0x03003FA5, SpriteUnknownPtrs, 0x03002340
 .d32 0x03002B68, 0x03007A48, 0x03002C04, 0x03003F98
-Data080FE744:                       ; 080FE744
-.d32 0x00000000, 0x03020100
+KoopaShell_SpawnedSprIDs:           ; 080FE744
+.d8 0x00, 0x00, 0x00, 0x00, 0x00, 0x01, 0x02, 0x03
 Data080FE74C:                       ; 080FE74C
-.d32 0x000040C0, 0x03002340, 0x03002B68, 0x03007A48
-.d32 SpriteSpawnFlags, Data080FE744, Data08102B14, Data080FE74C
+.d8 0xC0, 0x40, 0x00, 0x00
+@@UnusedPtrs080FE750:               ; 080FE750
+.d32 0x03002340, 0x03002B68, 0x03007A48
+.d32 SpriteSpawnFlags, KoopaShell_SpawnedSprIDs, Data08102B14, Data080FE74C
 .d32 0x03002C04, 0x03002BD3, 0x03007A48, 0x03002340
 .d32 0x03003F98, SpriteInitPtrs, SpriteMainPtrs, 0x03007A48
 .d32 0x03002340, 0x03003F98, 0x03002340, 0x03003F98
 Data080FE79C:                       ; 080FE79C
-.d32 0x52505254, 0x03002C28, Data080FE79C, 0x03007A48
-.d32 0x03002340, 0x03003028
+.d32 0x52505254
+@@UnusedPtrs080FE7A0:               ; 080FE7A0
+.d32 0x03002C28, Data080FE79C, 0x03007A48, 0x03002340
+.d32 0x03003028
 Data080FE7B4:                       ; 080FE7B4
 .d32 0x50525456
 Data080FE7B8:                       ; 080FE7B8
-.d32 0x024000D8, 0x02400241, 0x00000800, 0x03002340
+.d32 0x024000D8, 0x02400241, 0x00000800
+@@UnusedPtrs080FE7C4:               ; 080FE7C4
+.d32 0x03002340
 .d32 0x03002C28, 0x03007A48, Data080FE7B8, Data081006D0
 .d32 0x03002C04, 0x03002C08, 0x03002BD4, 0x03003F98
 .d32 0x03002340, 0x03002C28, Data080FE7B4, 0x03007A48
@@ -16801,7 +16808,7 @@ Data080FE856:                       ; 080FE856
 .d32 0x03003FA8, 0x03003FA5, 0x03003FB8, 0x03003FA9
 .d32 0x03002340, 0x03003FDF, 0x03003F98, 0x0300402F
 .d32 0x03004000
-SpriteStatusPtrs:                   ; 080FE914
+SpriteStatusPart2Ptrs:              ; 080FE914
 .d32 SpriteStatus0_Empty+1
 .d32 SpriteStatus1_Init+1
 .d32 SpriteStatus2_Falling+1
@@ -16815,9 +16822,9 @@ SpriteStatusPtrs:                   ; 080FE914
 .d32 SpriteStatusA_Kicked+1
 .d32 SpriteStatusB_Carried+1
 .d32 SpriteStatusC_GoalPowerUp+1
-.d32 0x03007A48, CodePtrs080FEDA8, SpriteStatusPtrs
-.d32 Data080FF476, 0x03002B68, 0x03007A48, 0x0300302C
-.d32 0x03002340, 0x03003F0C, 0x03004000, 0x03003F98
+.d32 0x03007A48, SpriteStatusPart1Ptrs, SpriteStatusPart2Ptrs, Data080FF476
+.d32 0x03002B68, 0x03007A48, 0x0300302C, 0x03002340
+.d32 0x03003F0C, 0x03004000, 0x03003F98
 Data080FE974:                       ; 080FE974
 .d32 0xFFFF0001, 0x03002340, 0x03007A48, Data080FE856
 .d32 0x03002B68, 0x03004011, 0x03003F98, 0x03003FAC
@@ -16883,7 +16890,7 @@ SpriteUnknownPtrs:                  ; 080FEA04
 .d32 Sub0802D4B0+1, Sub0802D4B0+1, Sub0802D4B0+1, Sub0802D4B0+1
 .d32 Sub0802D4B0+1, Sub0802D4B0+1, Sub0802D4B0+1, Sub0802D4B0+1
 .d32 Sub0802D4B0+1, Sub0802D4B0+1, Sub0802D4B0+1, Sub0802D4B0+1
-UnusedPtrs080FED44:                 ; 080FED44
+@@UnusedPtrs080FED44:               ; 080FED44
 .d32 0x03007A48, Data0812B13C, 0x03007A48, Data0812B13C
 .d32 0x03007A48, 0x03007A48, Data0812B13C, 0x03002340
 .d32 0x03004000, 0x03003028, 0x03007A48, Data0812B13C
@@ -16891,11 +16898,11 @@ UnusedPtrs080FED44:                 ; 080FED44
 .d32 0x03002340, Data0812B13C, 0x03004000, 0x03003028
 .d32 0x03007A48, Data0812B13C, 0x03002340, 0x03004000
 .d32 0x03003028
-CodePtrs080FEDA8:                   ; 080FEDA8
-.d32 Return0802C404+1, Return0802C404+1, Sub0802C408+1, Sub0802C464+1
-.d32 Sub0802C498+1, Sub0802C408+1, Sub0802C498+1, Return0802C404+1
-.d32 Sub0802C4B8+1, Sub0802C5D4+1, Sub0802C670+1, Sub0802C718+1
-.d32 Sub0802C464+1
+SpriteStatusPart1Ptrs:              ; 080FEDA8
+.d32 Return0802C404+1, Return0802C404+1, SpriteStatus2_5_Part1+1, SpriteStatus3_C_Part1+1
+.d32 SpriteStatus4_6_Part1+1, SpriteStatus2_5_Part1+1, SpriteStatus4_6_Part1+1, Return0802C404+1
+.d32 SpriteStatus8_Main_Part1+1, SpriteStatus9_Part1+1, SpriteStatusA_Part1+1, SpriteStatusB_Part1+1
+.d32 SpriteStatus3_C_Part1+1
 SpriteInitPtrs:                     ; 080FEDDC
 .d32 KoopaUnshelled_Init+1          ; 00
 .d32 KoopaUnshelled_Init+1          ; 01
@@ -17028,8 +17035,8 @@ SpriteInitPtrs:                     ; 080FEDDC
 .d32 Sub0805596C+1                  ; 80
 .d32 Sub0804BECC+1                  ; 81
 .d32 Sub0804A254+1                  ; 82
-.d32 Sub080483E0+1                  ; 83
-.d32 Sub080483E0+1                  ; 84
+.d32 WingedQBlock_Init+1            ; 83
+.d32 WingedQBlock_Init+1            ; 84
 .d32 Return0802BD80+1               ; 85
 .d32 Sub0805771C+1                  ; 86
 .d32 Return0802BD80+1               ; 87
@@ -17239,8 +17246,8 @@ SpriteMainPtrs:                     ; 080FF124
 .d32 Sub080559CC+1                  ; 80
 .d32 Sub0804BED4+1                  ; 81
 .d32 Sub0804A414+1                  ; 82
-.d32 Sub080483F4+1                  ; 83
-.d32 Sub080483F4+1                  ; 84
+.d32 WingedQBlock_Main+1            ; 83
+.d32 WingedQBlock_Main+1            ; 84
 .d32 Sub0802BD84+1                  ; 85
 .d32 Sub08057780+1                  ; 86
 .d32 Sub0804F2EC+1                  ; 87
@@ -17324,7 +17331,7 @@ ComboSoundIndexes:                  ; 080FF46C
 Data080FF476:                       ; 080FF476
 .d16 0x0000, 0x001F, 0x0028, 0x001A, 0x0019, 0x0018, 0x0017, 0x0016
 .d16 0x0015, 0x0014, 0x0013, 0x0012, 0x0026
-UnusedPtrs080FF490:                 ; 080FF490
+@@UnusedPtrs080FF490:               ; 080FF490
 .d32 0x03007A50, 0x03007A40, 0x03002340, 0x03002C28
 .d32 0x03002340, Data081006D0, 0x03003F98, 0x03007A48
 .d32 DataPtrs08100580, 0x03002C28, 0x03002340, Data081006D0
@@ -17342,7 +17349,7 @@ Data080FF524:                       ; 080FF524
 .d8 0x00, 0x00, 0x00, 0x00, 0x00, 0x40, 0x00, 0x40
 .d8 0x00, 0x40, 0x80, 0xC0, 0x40, 0x40, 0x00, 0x00
 .d8 0x40, 0x00, 0xC0, 0x80, 0x40, 0x40, 0x40, 0x40
-UnusedPtrs080FF53C:                 ; 080FF53C
+@@UnusedPtrs080FF53C:               ; 080FF53C
 .d32 DataPtrs08100580, 0x03002340
 .d32 0x03002C28, Data080FF51C, Data080FF520, Data080FF524
 .d32 Data081006D0, 0x03002C04, 0x03002C08, 0x03003F98
@@ -17476,8 +17483,8 @@ Data080FF985:                       ; 080FF985
 .d8 0x28, 0x0A, 0x10, 0x0D, 0x10, 0x20, 0x1C
 .d32 0x03007A48, Data080FF8C8, Data080FF907, Data080FF946
 .d32 Data080FF985, 0x03007A48, Data080FF8C8, Data080FF907
-.d32 Data080FF946, Data080FF985, 0x03007A48, Data08100E89
-.d32 Data08100E50, 0x03007A48, Data08100E89, Data08100E50
+.d32 Data080FF946, Data080FF985, 0x03007A48, SprMemory_MinSlotDefault
+.d32 SprMemory_MaxSlotDefault, 0x03007A48, SprMemory_MinSlotDefault, SprMemory_MaxSlotDefault
 .d32 0x03007A48, 0x03007A48
 Data080FFA0C:                       ; 080FFA0C
 .d8 0x00, 0x00, 0x00, 0xF8, 0xF8, 0xF8, 0xF8, 0xF8
@@ -18127,31 +18134,31 @@ Data08100DD0:                       ; 08100DD0
 .d32 0x03003028
 Data08100E48:                       ; 08100E48
 .d8 0x07, 0x03, 0x03, 0x01, 0x01, 0x01, 0x01, 0x01
-Data08100E50:                       ; 08100E50
+SprMemory_MaxSlotDefault:           ; 08100E50
 .d8 0x09, 0x07, 0x07, 0x07, 0x07, 0x06, 0x07, 0x06
 .d8 0x06, 0x09, 0x08, 0x04, 0x07, 0x07, 0x09, 0x08
 .d8 0x09, 0x05, 0x09
-Data08100E63:                       ; 08100E63
+SprMemory_MaxSlotEx1:               ; 08100E63
 .d8 0x09, 0x09, 0x07, 0x01, 0x01, 0x01, 0x07, 0x06
 .d8 0x06, 0x01, 0x02, 0x01, 0x07, 0x01, 0x08, 0x08
 .d8 0x09, 0x07, 0x0A
-Data08100E76:                       ; 08100E76
+SprMemory_MaxSlotEx2:               ; 08100E76
 .d8 0x09, 0x09, 0x07, 0x01, 0x01, 0x06, 0x07, 0x06
 .d8 0x06, 0x01, 0x02, 0x01, 0x07, 0x01, 0x08, 0x08
 .d8 0x09, 0x07, 0x09
-Data08100E89:                       ; 08100E89
+SprMemory_MinSlotDefault:           ; 08100E89
 .d8 0xFF, 0xFF, 0x00, 0x01, 0x00, 0x01, 0xFF, 0x01
 .d8 0xFF, 0x00, 0xFF, 0x00, 0xFF, 0x01, 0xFF, 0xFF
 .d8 0xFF, 0xFF, 0xFF
-Data08100E9C:                       ; 08100E9C
+SprMemory_MinSlotEx1:               ; 08100E9C
 .d8 0xFF, 0x07, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0x01
 .d8 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF
 .d8 0xFF, 0x05, 0xFF, 0xFF
-Data08100EB0:                       ; 08100EB0
+SprMemory_SprIDEx1:                 ; 08100EB0
 .d8 0xFF, 0x5F, 0x54, 0x5E, 0x60, 0x28, 0x88, 0xFF
 .d8 0xFF, 0xC5, 0x86, 0x28, 0xFF, 0x90, 0xFF, 0xFF
 .d8 0x9F, 0xAE, 0x54
-Data08100EC3:                       ; 08100EC3
+SprMemory_SprIDEx2:                 ; 08100EC3
 .d8 0xFF, 0x64, 0xFF, 0xFF, 0x9F, 0xFF, 0xFF, 0xFF
 .d8 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0x9F, 0xFF, 0xFF
 .d8 0xFF, 0xFF, 0xFF
@@ -18181,9 +18188,9 @@ Data08100F29:                       ; 08100F29
 .d8 0x10, 0xF0
 .align 4
 .d32 0x03002340, 0x03007A48, Data08100ED6, SpriteSpawnFlags
-.d32 SpriteFlags7, Data08100EE2, Data08100E50, Data08100E89
-.d32 Data08100EB0, Data08100E63, Data08100E9C, Data08100EC3
-.d32 Data08100E76, Data08100334, SpriteFlags6, 0x03003F98
+.d32 SpriteFlags7, Data08100EE2, SprMemory_MaxSlotDefault, SprMemory_MinSlotDefault
+.d32 SprMemory_SprIDEx1, SprMemory_MaxSlotEx1, SprMemory_MinSlotEx1, SprMemory_SprIDEx2
+.d32 SprMemory_MaxSlotEx2, Data08100334, SpriteFlags6, 0x03003F98
 .d32 0x03002C04, 0x03002C08, 0x03004044, 0x03002340
 .d32 0x03002BD3, 0x03007A48, 0x03002340, 0x03002BD3
 .d32 0x03003F98, 0x03002C04, 0x03007A48, 0x03002340
@@ -18197,19 +18204,23 @@ Data08100F29:                       ; 08100F29
 .d32 Data08100E48, 0x03007A48, 0x03003F98, 0x03002BD3
 .d32 0x03003FB1, 0x03003FB5, 0x03003FB4
 Data08101028:                       ; 08101028
-.d32 0x00780035
-Data0810102C:                       ; 0810102C
-.d32 0x00740000, 0x00760075, 0x00780077, 0x00000000
-.d32 0x00000079, 0x007D003E, 0x0004002C, 0x00450081
-.d32 0x00000080, 0x00750074, 0x00770076, 0x00000078
-.d32 0x00790000, 0x003E0000, 0x002C007D, 0x00810004
-.d32 0x00800045
-Data08101070:                       ; 08101070
-.d16 0x0800, 0x0808, 0x0808, 0x0000, 0x0001, 0x0809, 0x0909, 0x0808
-.d16 0x0009
-Data08101082:                       ; 08101082
+.d16 0x0035, 0x0078
+BlockSprIDs:                        ; 0810102C
+.d16 0x0000, 0x0074, 0x0075, 0x0076, 0x0077, 0x0078, 0x0000, 0x0000
+.d16 0x0079, 0x0000, 0x003E, 0x007D, 0x002C, 0x0004, 0x0081, 0x0045
+.d16 0x0080
+; unused duplicate?
+.d16 0x0000, 0x0074, 0x0075, 0x0076, 0x0077, 0x0078, 0x0000, 0x0000
+.d16 0x0079, 0x0000, 0x003E, 0x007D, 0x002C, 0x0004, 0x0081, 0x0045
+.d16 0x0080
+BlockSprStatuses:                   ; 08101070
+.d8 0x00, 0x08, 0x08, 0x08, 0x08, 0x08, 0x00, 0x00
+.d8 0x01, 0x00, 0x09, 0x08, 0x09, 0x09, 0x08, 0x08
+.d8 0x09
+.align 2
+Tile125_SprIDs:                     ; 08101082
 .d16 0x0080, 0x007E, 0x007D
-Data08101088:                       ; 08101088
+Tile125_SprStatuses:                ; 08101088
 .d8 0x09, 0x08, 0x08
 Data0810108B:                       ; 0810108B
 .d8 0x06, 0x02
@@ -18220,8 +18231,8 @@ Data0810109D:                       ; 0810109D
 .d8 0x01, 0x02, 0x04, 0x08
 .align 4
 .d32 0x03002340, Data0810109D, Data0810108D, 0x03002BD3
-.d32 0x03007A48, 0x03002340, 0x03002B68, Data08101070
-.d32 Data0810102C, Data08101088, Data08101082, Data08101028
+.d32 0x03007A48, 0x03002340, 0x03002B68, BlockSprStatuses
+.d32 BlockSprIDs, Tile125_SprStatuses, Tile125_SprIDs, Data08101028
 .d32 Data0810108B, 0x03003F98, 0x03003FB0, 0x03002C04
 .d32 0x0300404E, 0x03007A48, 0x03002340, Data08100EE8
 .d32 Data08100EFC, Data08100F10, 0x03003F98, 0x03002C08
@@ -19277,11 +19288,12 @@ Data0810323C:                       ; 0810323C
 Data08103244:                       ; 08103244
 .d8 0x00, 0x03, 0x05, 0x07, 0x08, 0x08, 0x07, 0x05
 .d8 0x03
-Data0810324D:                       ; 0810324D
+WingedQBlock_SprToSpawn:            ; 0810324D
 .d8 0x06, 0x02, 0x04, 0x05, 0x06, 0x01, 0x01, 0x05
-.d8 0x00, 0x00, 0x00
+.align 4
+@@UnusedPtrs08103260:               ; 08103260
 .d32 0x03002340, 0x03002C28, Data08103224, Data08103234
-.d32 Data0810322C, Data0810323C, 0x03007A48, Data0810324D
+.d32 Data0810322C, Data0810323C, 0x03007A48, WingedQBlock_SprToSpawn
 .d32 Data08103244, 0x03003F98, 0x03002BD3
 Data08103284:                       ; 08103284
 .d32 0xF010F808, Data08103284, 0x019C019A, 0x03002340
@@ -32923,7 +32935,7 @@ Data0812EAD0:                       ; 0812EAD0
 .d8 0x63, 0x63, 0x63, 0x63, 0x63, 0x63, 0x63, 0x00
 .d8 0x63, 0x63, 0x63, 0x63, 0x63, 0x63, 0x63, 0x00
 .d8 0x0F, 0x63, 0x63, 0x63, 0x63, 0x63, 0x63, 0x63
-UnusedPtrs0812EC90:                 ; 0812EC90
+@@UnusedPtrs0812EC90:               ; 0812EC90
 .d32 0x03002DB0, Data0812E6E0, Data0812E3E8, Data0812E478
 .d32 Data0812E3EA, 0x03002EB0, Data0812E6E0, Data0812E418
 .d32 Data0812E488, Data0812E41A, 0x03002FB0, Data0812E6E0

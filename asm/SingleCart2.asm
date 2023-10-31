@@ -48773,6 +48773,6 @@ pop   {r4-r5,pc}                    ; 080CB668
 
 ; 080CB66C-080D4020: second pseudo-ROM data sector
 
-.incbin "../data/SingleCart2_Data.bin"
+.incbin "data/SingleCart2_Data.bin"
 SingleCart_080D3320:                ; 080D3320
-.incbin "../data/Graphics/SingleCart_080D3320.bin"
+.incbin "data/Graphics/SingleCart_080D3320.bin"
