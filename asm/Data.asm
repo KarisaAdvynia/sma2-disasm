@@ -11938,9 +11938,9 @@ Data080F1EE4:                       ; 080F1EE4
 .d32 0x03002340, SublevelL1Ptrs, SublevelL2Ptrs, SublevelL2BGIDs
 .d32 SublevelSpritePtrs, 0x03007A48, 0x03003F98, 0x03002340
 .d32 0x03003F98, 0x03002340, 0x03002340, 0x03003F98
-CodePtrs080F1FD8:                   ; 080F1FD8
-.d32 Sub0801C628+1, Sub0801C658+1, Sub0801C6A0+1
-.d32 0x03002340, CodePtrs080F1FD8, 0x03003F98
+CI2Override_CodePtrs:               ; 080F1FD8
+.d32 CI2Override_DragonCoins+1, CI2Override_Coins+1, CI2Override_Time+1
+.d32 0x03002340, CI2Override_CodePtrs, 0x03003F98
 Data080F1FF0:                       ; 080F1FF0
 .d8 0x00, 0xC8, 0x00, 0x00
 .d32 0x03002340, Data080F1FF0, 0x03003F98, 0x03003FD1, 0x03003FD5
@@ -20651,10 +20651,11 @@ Data08105CC2:                       ; 08105CC2
 .d32 0x03003F98, 0x03004039, 0x0300408E, 0x03003FD4
 .d32 0x03002340, 0x03003F98, 0x03002340, 0x03007A48
 .d32 0x0300408A, 0x03003F98
-Data08105CFC:                       ; 08105CFC
+RedBerryEggSpriteIDs:               ; 08105CFC
 .d8 0x76, 0x77, 0x75, 0x74
-.d32 0x03002340, 0x03002B68, 0x03007A48
-.d32 Data08105CFC, 0x03002C04, 0x03003F98
+@@UnusedPtrs:                       ; 08105D00
+.d32 0x03002340, 0x03002B68, 0x03007A48, RedBerryEggSpriteIDs
+.d32 0x03002C04, 0x03003F98
 Data08105D18:                       ; 08105D18
 .d8 0x28, 0x24, 0x24
 Data08105D1B:                       ; 08105D1B
